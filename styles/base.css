@@ -1,7 +1,15 @@
+article {
+  border-bottom: 1px solid black;
+  margin: 1em;
+  padding-bottom: 1em;
+}
+
+/*Text Styling*/
 ul {
   list-style: none;
 }
-
-li {
+p {
   font-size: 1em;
 }
+
+/*Link Styling*/

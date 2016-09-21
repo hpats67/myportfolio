@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Steven's Portfolio</title>
+    <link rel="stylesheet" href="vendors/styles/normalize.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+
+  </head>
+  <body>
+    <header>
+      <section>
+        <h1>Me, Me, and More Me!</h1>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="icon-home"></a><a href="index.html"> Home</a></li>
+          <li><a href="experience.html">My Experience</a></li>
+          <li><a href="#"> My Stuff</a>
+          <ul>
+            <li><a href="https://scuttling.github.io/memory-card/" class=""> Scuttling Memory</a></li>
+          </ul></li>
+          <li> My links
+            <ul>
+              <li><a href="https://github.com/hpats67/" class="icon-github"> </a><a href="https://github.com/hpats67/">Github</a></li>
+              <li><a href="http://twitter.com/jaStaph" class="icon-twitter"> Twitter</a></li>
+              <li><a href="https://www.linkedin.com/in/steven-jackson-70342421" class="icon-linkedin"> LinkedIn</a></li>
+            </ul>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="experiences">
+        <article class="template" data-category="cat">
+          <header>
+            <h1>Position</h1>
+            <h2><a href="">Company</a></h2>
+            <h2 class="date">Time</h2>
+          </header>
+          <section><b>Aquired and sharpened skills: </b> <skills></skills>
+          <br>
+          <b>My Role: </b><description></description>
+          </section>
+        </article>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/experiencefill.js"></script>
+    <script type="text/javascript" src="scripts/experience.js"></script>
+  </body>
+</html>
