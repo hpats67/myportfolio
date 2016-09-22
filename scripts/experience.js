@@ -10,7 +10,8 @@ function Experience (opts) {
 };
 
 Experience.prototype.toHtml = function() {
-  var $newExperience = $('article.template').clone(); $newExperience.attr('data-category', this.category);
+  var $newExperience = $('article.template').clone(); $newExperience.attr('data-company', this.company);
+  $newExperience.attr('data-position', this.position);
 
   $newExperience.find('header a').attr('href', this.companyUrl);
   $newExperience.find('header a').html(this.company);

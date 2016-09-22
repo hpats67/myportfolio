@@ -16,14 +16,12 @@
       <section>
         <h1>Me, Me, and More Me!</h1>
       </section>
-      <nav>
+      <nav class= "top-nav">
         <ul>
-          <li><a href="#" class="icon-home"></a><a href="#"> Home</a></li>
-          <li><a href="experience.html">My Experience</a></li>
-          <li><a href="#"> My Stuff</a>
-          <ul>
-            <li><a href="https://scuttling.github.io/memory-card/" class=""> Scuttling Memory</a></li>
-          </ul></li>
+          <li class="tab" data-content="home"><a href="#" class="icon-home"> Home</a></li>
+          <li class="tab" data-content="experience"><a href="#">Work Experience</a></li>
+          <li class="tab" data-content="portfolio"><a href="#"> Portfolio</a></li>
+          <li class="tab" data-content="about"><a href="#">About Me</a></li>
           <li> My links
             <ul>
               <li><a href="https://github.com/hpats67/" class="icon-github"> </a><a href="https://github.com/hpats67/">Github</a></li>
@@ -34,8 +32,56 @@
       </nav>
     </header>
     <main>
-      <img src="http://placehold.it/450X250"/>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </main>
+      <main>
+        <section id="home" class="tab-content">
+          <p>
+            Welcome to my Website. I am glad you are here. Look around and get to know me a little bit.
+          </p>
+        </section>
+        <section id="experiences" class="tab-content">
+          <div>
+            <ul id="filters">
+              <li>
+                <select id="position-filter">
+                  <option value="">---Filter by Position</option>
+                </select>
+              </li>
+              <li>
+                <select id="company-filter">
+                  <option value="">---Filter by Company</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+          <article class="template">
+            <header>
+              <h1>Position</h1>
+              <h2><a href="">Company</a></h2>
+              <h2 class="date">Time</h2>
+            </header>
+            <section><b>Aquired and sharpened skills: </b> <skills></skills>
+            </section>
+              <br>
+            <section>
+            <p><b>My Role: </b><description></description>
+            </section>
+            <a href="#" class="read-more">Read More &rarr;</a>
+          </article>
+        </section>
+        <section id="about" class="tab-content">
+          <p>
+          This will tell a little about me and my interests
+          </p>
+        </section>
+        <section id="portfolio" class="tab-content">
+          <p>
+            This will list out my portfolio of web addresses
+          </p>
+        </section>
+      </main>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script type="text/javascript" src="scripts/experiencefill.js"></script>
+      <script type="text/javascript" src="scripts/experience.js"></script>
+      <script type="text/javascript" src="scripts/experienceView.js"></script>
   </body>
 </html>
