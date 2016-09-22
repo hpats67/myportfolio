@@ -3,3 +3,12 @@
   display: table;
   clear: both;
 }
+
+#filters select {
+  width: 30%;
+  margin: .2em 5%;
+}
+
+#filters li {
+  display: inline;
+}
