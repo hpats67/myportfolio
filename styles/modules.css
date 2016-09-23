@@ -1,5 +1,10 @@
+.top-nav {
+  display: inline;
+}
+
 .top-nav ul {
   display: none;
+  clear: both;
 }
 
 .top-nav:hover .icon-circle-down:before {
@@ -9,5 +14,4 @@
 
 .top-nav:hover ul{
   display: block;
-  transition-duration: .5s;
 }

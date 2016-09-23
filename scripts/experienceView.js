@@ -1,29 +1,10 @@
 var articleView = {};
 
 articleView.handleNav = function() {
-  $('.top-nav').on('click', 'li.tab', function(){
-    var tabClickContent = $(this).data('content');
-    if (tabClickContent === 'home') {
-      $('#experiences').hide();
-      $('#portfolio').hide();
-      $('#about').hide();
-      $('#home').fadeIn();
-    } else if (tabClickContent === 'experience') {
-      $('#experiences').fadeIn();
-      $('#portfolio').hide();
-      $('#about').hide();
-      $('#home').hide();
-    } else if (tabClickContent === 'portfolio') {
-      $('#experiences').hide();
-      $('#portfolio').fadeIn();
-      $('#about').hide();
-      $('#home').hide();
-    } else if (tabClickContent === 'about') {
-      $('#experiences').hide();
-      $('#portfolio').hide();
-      $('#about').fadeIn();
-      $('#home').hide();
-    }
+  $('.top-nav').on('click', '.tab', function(event){
+    event.preventDefault();
+    $('.tab-content').hide();
+    $('#' + $(this).data('content')).fadeIn();
   });
   $('.top-nav .tab:first').click();
 };
@@ -70,7 +51,7 @@ articleView.companyFilter = function() {
 };
 
 articleView.setTeasers = function() {
-  var $hiddenText = $('description *:nth-of-type(n+2)');
+  var $hiddenText = $('.description *:nth-of-type(n+2)');
   $hiddenText.hide();
   $('.read-more').on('click', function(event) {
     event.preventDefault();
