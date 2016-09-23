@@ -48,7 +48,7 @@
 }
 .icon-circle-down:before {
   content: "\ea43";
-  font-size: 3em;
+  font-size: 4em;
   color: rgba(255, 255, 255, .3);
   background-image: url(../images/meTulipsSide.jpg);
   background-size: 100% 100%;
