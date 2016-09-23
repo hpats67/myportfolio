@@ -70,16 +70,17 @@ articleView.companyFilter = function() {
 };
 
 articleView.setTeasers = function() {
-  $('description *:nth-of-type(n+2)').hide();
+  var $hiddenText = $('description *:nth-of-type(n+2)');
+  $hiddenText.hide();
   $('.read-more').on('click', function(event) {
     event.preventDefault();
     var $this = $(this);
     var stringArray = $this.html().split(' ');
     if (stringArray[1] === 'More') {
-      $('description *:nth-of-type(n+2)').fadeIn();
+      $hiddenText.fadeIn();
       $this.html('Read Less &larr;');
     }else {
-      $('description *:nth-of-type(n+2)').hide();
+      $hidden.hide();
       $this.html('Read More &rarr;');
     };
   });

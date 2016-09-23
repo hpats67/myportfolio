@@ -1,3 +1,13 @@
-.template {
+.top-nav ul {
   display: none;
+}
+
+.top-nav:hover .icon-circle-down:before {
+  color: rgba(255, 255, 255, 1);
+  transition-duration: .25s;
+}
+
+.top-nav:hover ul{
+  display: block;
+  transition-duration: .5s;
 }

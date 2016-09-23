@@ -10,22 +10,11 @@ function Experience (opts) {
 };
 
 Experience.prototype.toHtml = function() {
-  var $newExperience = $('article.template').clone(); $newExperience.attr('data-company', this.company);
-  $newExperience.attr('data-position', this.position);
+  var source = $('#experience-template').html();
+  var template = Handlebars.compile(source);
 
-  $newExperience.find('header a').attr('href', this.companyUrl);
-  $newExperience.find('header a').html(this.company);
-  $newExperience.find('h1').attr('title', this.position);
-  $newExperience.find('h1').html(this.position);
-  $newExperience.find('h2.date').attr('title', this.date);
-  $newExperience.find('h2.date').html('Employed from ' + this.date);
-  $newExperience.find('skills').attr('title', this.skills);
-  $newExperience.find('skills').html('Skills I learned or sharpened: ' + this.skills);
-  $newExperience.find('description').attr('title', this.description);
-  $newExperience.find('description').html(this.description);
-
-  $newExperience.removeClass('template');
-  return $newExperience;
+  var html = template(this);
+  return html;
 };
 
 localFill.forEach(function(ele) {
