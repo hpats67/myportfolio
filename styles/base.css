@@ -1,4 +1,7 @@
-* {
+header,
+nav,
+body,
+ul {
   border: 1px solid blue;
 }
 
