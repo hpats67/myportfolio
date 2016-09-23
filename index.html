@@ -9,24 +9,42 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
-
+    <!--start of handlebars template  -->
+    <script id="experience-template" type="text/x-handlebars-templated">
+      <article data-position="{{position}}" data-company="{{company}}">
+        <header>
+          <h1>{{position}}</h1>
+          <h2><a href="{{companyUrl}}">{{company}}</a></h2>
+          <h2 class="date">{{date}}</h2>
+        </header>
+        <section><b>Aquired and sharpened skills: </b> {{skills}}
+        </section>
+        <br>
+        <section>
+          <p><b>My Role: </b>{{description}}</p>
+          </section>
+          <a href="#" class="read-more">Read More &rarr;</a>
+        </article>
+    </script>
   </head>
   <body>
     <header>
       <section>
         <h1>Me, Me, and More Me!</h1>
+        <h2>A website for those wanting to experience the greatness that is Steven Jackson</h2>
       </section>
       <nav class= "top-nav">
+        <div class="icon-circle-down"></div>
         <ul>
-          <li class="tab" data-content="home"><a href="#" class="icon-home"> Home</a></li>
-          <li class="tab" data-content="experience"><a href="#">Work Experience</a></li>
-          <li class="tab" data-content="portfolio"><a href="#"> Portfolio</a></li>
-          <li class="tab" data-content="about"><a href="#">About Me</a></li>
-          <li> My links
+          <li class="tab" data-content="home"><a href="#"><b class="icon-home"> </b> Home</a></li>
+          <li class="tab" data-content="experience"><a href="#"><b class="icon-office"></b> Work Experience</a></li>
+          <li class="tab" data-content="portfolio"><a href="#"><b class="icon-display"></b> Portfolio</a></li>
+          <li class="tab" data-content="about"><a href="#"><b class="icon-user"></b> About Me</a></li>
+          <li><a href="#"><b class="icon-new-tab"></b> My links</a>
             <ul>
-              <li><a href="https://github.com/hpats67/" class="icon-github"> </a><a href="https://github.com/hpats67/">Github</a></li>
-              <li><a href="http://twitter.com/jaStaph" class="icon-twitter"> Twitter</a></li>
-              <li><a href="https://www.linkedin.com/in/steven-jackson-70342421" class="icon-linkedin"> LinkedIn</a></li>
+              <li><a href="https://github.com/hpats67/"><b class="icon-github"> </b>Github</a></li>
+              <li><a href="http://twitter.com/jaStaph"><b class="icon-twitter"></b> Twitter</a></li>
+              <li><a href="https://www.linkedin.com/in/steven-jackson-70342421"><b class="icon-linkedin"></b> LinkedIn</a></li>
             </ul>
         </ul>
       </nav>
@@ -35,7 +53,7 @@
       <main>
         <section id="home" class="tab-content">
           <p>
-            Welcome to my Website. I am glad you are here. Look around and get to know me a little bit.
+            Welcome to my Website. b am glad you are here. Look around and get to know me a little bit.
           </p>
         </section>
         <section id="experiences" class="tab-content">
@@ -53,20 +71,6 @@
               </li>
             </ul>
           </div>
-          <article class="template">
-            <header>
-              <h1>Position</h1>
-              <h2><a href="">Company</a></h2>
-              <h2 class="date">Time</h2>
-            </header>
-            <section><b>Aquired and sharpened skills: </b> <skills></skills>
-            </section>
-              <br>
-            <section>
-            <p><b>My Role: </b><description></description>
-            </section>
-            <a href="#" class="read-more">Read More &rarr;</a>
-          </article>
         </section>
         <section id="about" class="tab-content">
           <p>
@@ -80,6 +84,7 @@
         </section>
       </main>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
       <script type="text/javascript" src="scripts/experiencefill.js"></script>
       <script type="text/javascript" src="scripts/experience.js"></script>
       <script type="text/javascript" src="scripts/experienceView.js"></script>
