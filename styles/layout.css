@@ -12,15 +12,22 @@
   clear: both;
 }
 
-.heading-group h2{
-  max-width: 80%;
+header  {
+  margin-left: 2%;
+}
+
+.top-nav li.page {
+  display: block;
+  padding: .25em;
+  border-bottom: 1px solid gray;
+  height: 2em;
 }
 
 #filters select {
-  width: 30%;
+  width: 90%;
   margin: .2em 5%;
 }
 
-#filters li {
+/*#filters li {
   display: inline;
-}
+}*/

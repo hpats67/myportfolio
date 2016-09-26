@@ -1,17 +1,52 @@
+.heading-group h2{
+  max-width: 95%;
+  font-size: 1.25em;
+  /*position: absolute;
+  left: 3.75em;*/
+  margin-top: -1em;
+}
+
 .top-nav {
   display: inline;
 }
 
-.top-nav ul {
+.page-links {
   display: none;
   clear: both;
 }
 
-.top-nav:hover .icon-circle-down:before {
+ul.links {
+  margin-top: 0px;
+  padding: 0px;
+  width: 78%;
+}
+
+ul.links li{
+  display: inline;
+  font-size: 3.5em;
+  margin-left: 8%;
+}
+
+.icon-circle-down {
+  font-size: 4em;
+  color: rgba(255, 255, 255, .3);
+  background-image: url(../images/meTulipsSide.jpg);
+  background-size: 100% 100%;
+  border-radius: 50%;
+}
+
+.top-nav:hover .icon-circle-down {
   color: rgba(255, 255, 255, 1);
   transition-duration: .25s;
 }
 
-.top-nav:hover ul{
+.top-nav:hover ul.page-links {
   display: block;
+}
+
+.page-links li{
+ padding: .5em .2em;
+ font-size: 1.5em;
+ margin-left: .5em;
+ border-style: outset;
 }

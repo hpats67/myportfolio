@@ -51,19 +51,25 @@ articleView.companyFilter = function() {
 };
 
 articleView.setTeasers = function() {
-  var $hiddenText = $('.description *:nth-of-type(n+2)');
-  $hiddenText.hide();
+  $('.description *:nth-of-type(n+3)').hide();
   $('.read-more').on('click', function(event) {
     event.preventDefault();
-    var $this = $(this);
-    var stringArray = $this.html().split(' ');
-    if (stringArray[1] === 'More') {
-      $hiddenText.fadeIn();
-      $this.html('Read Less &larr;');
-    }else {
-      $hidden.hide();
-      $this.html('Read More &rarr;');
+    var $selection = $(this).parent();
+    if($(this).text() === 'Read More →') {
+      $selection.find('p').show();
+      $(this).html('Read Less ←');
+    } else {
+      $selection.find('*:nth-of-type(n+3)').hide();
+      $(this).html('Read More →');
     };
+    // // var $this = $(this);
+    // // var stringArray = $this.html().split(' ');
+    // // if (stringArray[1] === 'More') {
+    // //   $this.html('Read Less &larr;');
+    // // }else {
+    // //   $hidden.hide();
+    // //   $this.html('Read More &rarr;');
+    // };
   });
 };
 
