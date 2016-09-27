@@ -66,7 +66,9 @@ articleView.setTeasers = function() {
 };
 
 articleView.renderIndexPage = function() {
-  $('#experiences').append(a.toHtml('#experience-template'));
+  Experience.all.forEach(function(a){
+    $('#experiences').append(a.toHtml('#experience-template'));
+  });
   articleView.handleNav();
   articleView.populateFilters();
   articleView.positionFilter();
