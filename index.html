@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Philosopher" rel="stylesheet">
     <title>Steven's Portfolio</title>
     <link rel="stylesheet" href="vendors/styles/normalize.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
+    <link rel="icon" type="image/x-icon" href="images/meSunFireicon.png">
     <!--start of handlebars template  -->
     <script id="experience-template" type="text/x-handlebars-templated">
       <article data-position="{{position}}" data-company="{{company}}">
@@ -41,10 +43,10 @@
         <nav class= "top-nav">
           <span class="show icon-circle-down pull-left margin-left  show"></span>
           <ul class= "show page-links margin-left">
-            <li class="tab" data-content="home"><a href="#"><b class="icon-home"> </b> Home</a></li>
-            <li class="tab" data-content="experiences"><a href="#"><b class="icon-office"></b> Work Experience</a></li>
-            <li class="tab" data-content="portfolio"><a href="#"><b class="icon-display"></b> Portfolio</a></li>
-            <li class="tab" data-content="about"><a href="#"><b class="icon-user"></b> About Me</a></li>
+            <li class="tab" data-content="home"><a href="#"><b class="icon-home"> </b><em> Home<em></a></li>
+            <li class="tab" data-content="experiences"><a href="#"><b class="icon-office"></b><em> Work Experience</em></a></li>
+            <li class="tab" data-content="portfolio"><a href="#"><b class="icon-display"></b><em> Portfolio</em></a></li>
+            <li class="tab" data-content="about"><a href="#"><b class="icon-user"></b><em> About Me</em></a></li>
           </ul>
       </nav>
     </header>
