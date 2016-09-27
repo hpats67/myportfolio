@@ -51,7 +51,7 @@ articleView.companyFilter = function() {
 };
 
 articleView.setTeasers = function() {
-  $('.description *:nth-of-type(n+3)').hide();
+  $('.description *:nth-of-type(n+2)').hide();
   $('.read-more').on('click', function(event) {
     event.preventDefault();
     var $selection = $(this).parent();
@@ -59,7 +59,7 @@ articleView.setTeasers = function() {
       $selection.find('p').show();
       $(this).html('Read Less ←');
     } else {
-      $selection.find('*:nth-of-type(n+3)').hide();
+      $selection.find('.description p:nth-of-type(n+2)').hide();
       $(this).html('Read More →');
     };
   });
