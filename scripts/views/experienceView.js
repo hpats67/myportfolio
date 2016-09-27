@@ -62,19 +62,17 @@ articleView.setTeasers = function() {
       $selection.find('*:nth-of-type(n+3)').hide();
       $(this).html('Read More →');
     };
-    // // var $this = $(this);
-    // // var stringArray = $this.html().split(' ');
-    // // if (stringArray[1] === 'More') {
-    // //   $this.html('Read Less &larr;');
-    // // }else {
-    // //   $hidden.hide();
-    // //   $this.html('Read More &rarr;');
-    // };
   });
 };
 
-articleView.handleNav();
-articleView.populateFilters();
-articleView.positionFilter();
-articleView.companyFilter();
-articleView.setTeasers();
+articleView.renderIndexPage = function() {
+  $('#experiences').append(a.toHtml('#experience-template'));
+  articleView.handleNav();
+  articleView.populateFilters();
+  articleView.positionFilter();
+  articleView.companyFilter();
+  articleView.setTeasers();
+};
+
+Experience.fetchAll();
+articleView.renderIndexPage();

@@ -1,3 +1,14 @@
+.top {
+  background-image: url(../images/meSunFireleft1.jpg);
+  background-size: 100% 100%;
+  min-height: 10em;
+  background-repeat: no-repeat;
+}
+
+.margin-left {
+  margin-left: 2%;
+}
+
 .heading-group h2{
   max-width: 95%;
   font-size: 1.25em;
@@ -33,6 +44,7 @@ ul.links li{
   background-image: url(../images/meTulipsSide.jpg);
   background-size: 100% 100%;
   border-radius: 50%;
+  margin-left: 3%;
 }
 
 .top-nav:hover .icon-circle-down {
@@ -48,5 +60,5 @@ ul.links li{
  padding: .5em .2em;
  font-size: 1.5em;
  margin-left: .5em;
- border-style: outset;
+ /*border-style: outset;*/
 }

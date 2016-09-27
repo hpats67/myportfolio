@@ -6,6 +6,11 @@ body  {
   margin-left: 1%;
 }*/
 
+html {
+  min-height: 100%;
+  background: linear-gradient(rgba(100, 106, 99, 1), rgba(187, 147, 104, 1));
+}
+
 article {
   border-bottom: 1px solid black;
   margin: 1em;
@@ -26,7 +31,7 @@ p {
 /*Link Styling*/
 a, a:link, a:active{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 a:hover, a:focus {
