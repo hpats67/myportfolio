@@ -60,5 +60,10 @@ ul.links li{
  padding: .5em .2em;
  font-size: 1.5em;
  margin-left: .5em;
- /*border-style: outset;*/
+}
+
+@media only screen and (min-width: 500px) {
+  .icon-circle-down {
+    display:none{}
+  }
 }
