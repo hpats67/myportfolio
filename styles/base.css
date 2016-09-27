@@ -36,7 +36,7 @@ a, a:link, a:active{
 
 a:hover, a:focus {
   font-size: 1em;
-  color: grey;
+  color: rgb(147, 84, 54);
 }
 
 a:visited {
