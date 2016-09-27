@@ -1,8 +1,14 @@
-header,
-nav,
-body,
-ul {
-  border: 1px solid blue;
+/** {
+  border: .5px solid blue;
+}*/
+/*
+body  {
+  margin-left: 1%;
+}*/
+
+html {
+  min-height: 100%;
+  background: linear-gradient(rgba(100, 106, 99, 1), rgba(187, 147, 104, 1));
 }
 
 article {
@@ -14,9 +20,24 @@ article {
 /*Text Styling*/
 ul {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
+
 p {
   font-size: 1em;
 }
 
 /*Link Styling*/
+a, a:link, a:active{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover, a:focus {
+  font-size: 1em;
+  color: grey;
+}
+
+a:visited {
+}

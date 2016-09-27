@@ -17,7 +17,7 @@
           <h2><a href="{{companyUrl}}">{{company}}</a></h2>
           <h2 class="date">{{date}}</h2>
         </header>
-        <section><b>Aquired and sharpened skills: </b> {{skills}}
+        <section><b>Aquired and sharpened skills: </b> {{{skills}}}
         </section>
         <br>
         <section class="description">
@@ -28,32 +28,32 @@
     </script>
   </head>
   <body>
-    <header class="clearfix">
-      <div class="heading-group">
+    <header class="clearfix top">
+      <div class="heading-group margin-left">
         <h1>Me, Me, and More Me!</h1>
-        <h2 class="pull-right">A website for those wanting to experience the greatness that is Steven Jackson</h2>
+        <h2>Experiencing the greatness that is Steven Jackson</h2>
       </div>
       <nav class= "top-nav">
-        <div class="icon-circle-down"></div>
-        <ul>
+        <div>
+          <span class="icon-circle-down pull-left margin-left"></span>
+          <ul class="links pull-left">
+            <li><a href="https://github.com/hpats67/" class="icon-github"></a></li>
+            <li><a href="http://twitter.com/jaStaph" class="icon-twitter"></a></li>
+            <li><a href="https://www.linkedin.com/in/steven-jackson-70342421" class="icon-linkedin"></a></li>
+          </ul>
+        </div>
+        <ul class="page-links margin-left">
           <li class="tab" data-content="home"><a href="#"><b class="icon-home"> </b> Home</a></li>
           <li class="tab" data-content="experiences"><a href="#"><b class="icon-office"></b> Work Experience</a></li>
           <li class="tab" data-content="portfolio"><a href="#"><b class="icon-display"></b> Portfolio</a></li>
           <li class="tab" data-content="about"><a href="#"><b class="icon-user"></b> About Me</a></li>
-          <li><a href="#"><b class="icon-new-tab"></b> My links</a>
-            <ul>
-              <li><a href="https://github.com/hpats67/"><b class="icon-github"> </b>Github</a></li>
-              <li><a href="http://twitter.com/jaStaph"><b class="icon-twitter"></b> Twitter</a></li>
-              <li><a href="https://www.linkedin.com/in/steven-jackson-70342421"><b class="icon-linkedin"></b> LinkedIn</a></li>
-            </ul>
         </ul>
       </nav>
     </header>
-    <main>
       <main>
         <section id="home" class="tab-content">
           <p>
-            Welcome to my Website. b am glad you are here. Look around and get to know me a little bit.
+            Welcome to my Website. I am glad you are here. Look around and get to know me a little bit.
           </p>
         </section>
         <section id="experiences" class="tab-content">
@@ -85,8 +85,7 @@
       </main>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
-      <script type="text/javascript" src="scripts/experiencefill.js"></script>
-      <script type="text/javascript" src="scripts/experience.js"></script>
-      <script type="text/javascript" src="scripts/experienceView.js"></script>
+      <script src="scripts/models/experience.js"></script>
+      <script src="scripts/views/experienceView.js"></script>
   </body>
 </html>
