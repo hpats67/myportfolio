@@ -12,7 +12,7 @@ Experience.prototype.toHtml = function(scriptTemplateId) {
 };
 
 Experience.loadAll = function(dataPassedIn) {
-  Experience.all = dataPassedIn.map(function(ele) {
+  Experience.all = dataPassedIn.map(function (ele) {
     return new Experience(ele);
   });
 };
