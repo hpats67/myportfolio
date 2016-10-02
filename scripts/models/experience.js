@@ -12,8 +12,8 @@ Experience.prototype.toHtml = function(scriptTemplateId) {
 };
 
 Experience.loadAll = function(dataPassedIn) {
-  dataPassedIn.forEach(function(ele) {
-    Experience.all.push(new Experience(ele));
+  Experience.all = dataPassedIn.map(function (ele) {
+    return new Experience(ele);
   });
 };
 
