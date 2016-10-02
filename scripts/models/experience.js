@@ -12,8 +12,13 @@ Experience.prototype.toHtml = function(scriptTemplateId) {
 };
 
 Experience.loadAll = function(dataPassedIn) {
+<<<<<<< HEAD
   dataPassedIn.forEach(function(ele) {
     Experience.all.push(new Experience(ele));
+=======
+  Experience.all = dataPassedIn.map(function (ele) {
+    return new Experience(ele);
+>>>>>>> 6e6de02a57c1ae744b92609953ec51989f591f61
   });
 };
 
