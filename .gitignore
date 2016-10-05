@@ -1,4 +1,5 @@
 # Ignore node setup
-vendors/scripts/page.js
 node_modules/*
 package.json
+
+githubToken.js
