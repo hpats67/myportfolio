@@ -28,6 +28,18 @@
           <a href="#" class="read-more">Read More &rarr;</a>
         </article>
     </script>
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank"><h2>{{name}}</h3></a>
+        <p>Description: {{description}}</p>
+        <p>Primary Language: {{language}}</p>
+        <p>Created: {{created_at}}</p>
+        <p>Last Updated: {{updated_at}}</p>
+        {{#if watchers_count}}
+          <p>{{watchers_count}} watching this repo</p>
+        {{/if}}
+      </li>
+    </script>
   </head>
   <body>
     <header class="top clearfix">
@@ -79,15 +91,25 @@
         </section>
         <section id="portfolio" class="tab-content">
           <p>
-            This will list out my portfolio of web addresses
+            Here is a sampling of my personal Github. This is what I have been working on recently with both completed and current projects.
           </p>
+          <ul>
+            <!--A template of my github using handlebars  -->
+          </ul>
         </section>
       </main>
+      <!--vendor and token files  -->
+      <script src="githubToken.js"></script>
       <script src="vendors/scripts/page.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+      <!--Model files  -->
+      <script src="scripts/models/repos.js"></script>
       <script src="scripts/models/experience.js"></script>
+      <!--View files  -->
+      <script src="scripts/views/repoViews.js"></script>
       <script src="scripts/views/experienceView.js"></script>
+      <!--Controller Files  -->
       <script src="scripts/controllers/aboutController.js"></script>
       <script src="scripts/controllers/experienceController.js"></script>
       <script src="scripts/controllers/portfolioController.js"></script>
