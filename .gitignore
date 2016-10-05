@@ -1,5 +1,4 @@
 # Ignore node setup
 node_modules/*
-package.json
 
 githubToken.js
